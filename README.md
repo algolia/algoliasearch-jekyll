@@ -12,7 +12,7 @@ Algolia index by simply running `jekyll algolia push`.
 ## Usage
 
 ```shell
-$ jekyll algolia push
+$ bundle exec jekyll algolia push
 ```
 
 This will push the content of your jekyll website to your Algolia index.
@@ -216,8 +216,8 @@ version of the popular [Hyde theme][8].
 ## GitHub Pages
 
 GitHub does not allow custom plugins to be run on GitHub Pages. This means that
-you'll either have to run `jekyll algolia push` manually, or configure TravisCI
-to do it for you.
+you'll either have to run `bundle exec jekyll algolia push` manually, or
+configure TravisCI to do it for you.
 
 [Travis CI][9] is an hosted continuous integration
 service, and it's free for open-source projects. Properly configured, it can
