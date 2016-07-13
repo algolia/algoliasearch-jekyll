@@ -26,7 +26,7 @@ def get_site(config = {}, options = {})
   options = default_options.merge(options)
 
   config = config.merge(
-    source: fixture_path
+    'source' => fixture_path
   )
   config = Jekyll.configuration(config)
 
