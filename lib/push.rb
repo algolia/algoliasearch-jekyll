@@ -176,12 +176,13 @@ class AlgoliaSearchJekyllPush < Jekyll::Command
     end
 
     def push(items)
-      AlgoliaSearchCredentialChecker.new(@config).assert_valid
+      checker = AlgoliaSearchCredentialChecker.new(@config)
+      checker.assert_valid
 
       Jekyll.logger.info '=== DRY RUN ===' if @is_dry_run
 
       # Add items to a temp index, then rename it
-      index_name = @config['algolia']['index_name']
+      index_name = checker.index_name
       index_name_tmp = "#{index_name}_tmp"
       batch_add_items(items, create_index(index_name_tmp))
       Algolia.move_index(index_name_tmp, index_name) unless @is_dry_run
