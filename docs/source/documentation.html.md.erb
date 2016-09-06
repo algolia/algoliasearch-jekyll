@@ -134,11 +134,13 @@ end
 ## Command line
 
 Here is the list of command line options you can pass to the `jekyll algolia
-push` command:
+push` command. Most of them mirror the options you can pass to the `build`
+command.
 
 | Flag                     | Description                                                           | 
 | ----                     | -----                                                                 | 
 | `--config ./_config.yml` | You can here specify the config file to use. Default is `_config.yml` | 
+| `--source`               | Change the directory where Jekyll will read files                     | 
 | `--future`               | With this flag, the command will also index posts with a future date  | 
 | `--limit_posts 10`       | Limits the number of posts to parse and index                         | 
 | `--drafts`               | Index drafts in the `_drafts` folder as well                          | 
