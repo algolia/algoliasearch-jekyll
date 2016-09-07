@@ -19,7 +19,27 @@ page '/*.txt', layout: false
 # General configuration
 config[:boilerplate_version] = '1.0.2'
 
-
+config[:product_author] = '@Algolia'
+config[:product_name] = 'Algolia for Jekyll'
+config[:product_shortname] = 'Jekyll'
+config[:product_description] = 'Add search to your static Jekyll website with Algolia'
+config[:product_url] = 'https://community.algolia.com/jekyll/'
+config[:product_repo] = 'https://github.com/algolia/algoliasearch-jekyll'
+config[:product_utm] = 'jekyll_website'
+config[:product_menu] = [
+  {
+    name: 'Getting started',
+    url: 'getting-started.html'
+  },
+  {
+    name: 'Documentation',
+    url: 'documentation.html'
+  },
+  {
+    name: 'Examples',
+    url: 'examples.html'
+  }
+]
 
 # Reload the browser automatically whenever files change
 configure :development do
@@ -32,17 +52,9 @@ end
 
 helpers do
   def nav_active(path)
-    current_page.path == path ? {:class => "active"} : {}
+    current_page.path == path ? { class: 'l-header--menu-item__active' } : {}
   end
 end
-
-
-# Methods defined in the helpers block are available in templates
-# helpers do
-#   def some_helper
-#     "Helping"
-#   end
-# end
 
 # Build-specific configuration
 configure :build do

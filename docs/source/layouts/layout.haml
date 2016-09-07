@@ -1,0 +1,29 @@
+!!! 5
+%html
+  %head
+    %meta{charset: 'utf-8'}
+    %meta{'http-equiv': 'x-ua-compatible', content: 'ie=edge'}
+    %title=yield_content(:title)
+    %meta{'name': 'viewport', 'content': 'width=device-width, initial-scale=1'}
+
+    %meta{'name': 'description', 'content': config[:product_description]}
+    %meta{'name': 'twitter:card', 'content': 'summary_large_image'}
+    %meta{'name': 'twitter:site', 'content': config[:product_author]}
+    %meta{'name': 'twitter:creator', 'content': config[:product_author]}
+    %meta{'name': 'twitter:title', 'content': config[:product_name]}
+    %meta{'name': 'twitter:description', 'content': config[:product_description]}
+    %meta{'name': 'twitter:image', 'content': config[:product_url]+'images/card.png'}
+    %meta{'name': 'og:type', 'content': 'article'}
+    %meta{'name': 'og:url', 'content': config[:product_url]}
+    %meta{'name': 'og:site_name', 'content': config[:product_name]}
+    %meta{'name': 'og:title', 'content': config[:product_name]}
+    %meta{'name': 'og:description', 'content': config[:product_description]}
+    %meta{'name': 'og:image', 'content': config[:product_url]+'images/card.png'}
+
+    %link{'href': 'https://fonts.googleapis.com/css?family=Raleway:400,500,600', 'rel': 'stylesheet', 'type': 'text/css'}
+    =stylesheet_link_tag :main
+
+  %body{'class': page_classes}
+    =partial('partials/header')
+    =yield
+    =partial('partials/footer')
