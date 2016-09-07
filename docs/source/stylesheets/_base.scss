@@ -4,3 +4,9 @@
 body {
   font-family: $font-settings;
 }
+img {
+  vertical-align: middle;
+}
+.l-container {
+  margin-top: $header-height;
+}

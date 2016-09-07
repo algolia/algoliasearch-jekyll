@@ -26,20 +26,6 @@ config[:product_description] = 'Add search to your static Jekyll website with Al
 config[:product_url] = 'https://community.algolia.com/jekyll/'
 config[:product_repo] = 'https://github.com/algolia/algoliasearch-jekyll'
 config[:product_utm] = 'jekyll_website'
-config[:product_menu] = [
-  {
-    name: 'Getting started',
-    url: 'getting-started.html'
-  },
-  {
-    name: 'Documentation',
-    url: 'documentation.html'
-  },
-  {
-    name: 'Examples',
-    url: 'examples.html'
-  }
-]
 
 # Reload the browser automatically whenever files change
 configure :development do
