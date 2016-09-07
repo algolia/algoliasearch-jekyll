@@ -1,0 +1,15 @@
+.u-underline--small {
+  position: relative;
+  padding-bottom: .5rem;
+  &:after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 30px;
+    height: 3px;
+    bottom:0px;
+    left: 50%;
+    margin-left: -15px;
+    background-color: $title-underline-color;
+  }
+}
