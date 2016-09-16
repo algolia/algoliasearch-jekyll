@@ -1,6 +1,23 @@
 .c-jumbotron {
   background: linear-gradient(-65deg, $gradient-start 0%, $gradient-end 100%);
 }
+
+.c-jumbotron--cta {
+  @extend .link;
+  @extend .white;
+  @extend .dib;
+  @extend .ba;
+  @extend .br2;
+  @extend .ph3;
+  @extend .pv2;
+  @extend .ttu;
+  @extend .tracked;
+  @extend .underline-hover;
+}
+
 .c-jumbotron--screencast {
+  @extend .mt3;
+  @extend .br2;
+  @extend .shadow-4;
   margin-bottom: -20px;
 }

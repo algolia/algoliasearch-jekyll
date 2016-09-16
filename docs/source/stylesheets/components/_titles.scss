@@ -1,6 +1,18 @@
 .o-title--centered {
-  // text-align:center;
-  // font-size: 2.25rem;
-
-
+  @extend .tc;
+  @extend .f2;
+  @extend .black-70;
+  position: relative;
+  padding-bottom: .5rem;
+  &:after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 30px;
+    height: 3px;
+    bottom:0px;
+    left: 50%;
+    margin-left: -15px;
+    background-color: $title-underline-color;
+  }
 }

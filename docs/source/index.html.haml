@@ -11,44 +11,47 @@
     Indexing all your Jekyll content with a simple command
 
   %div.f6.mt2
-    %a.link.white.dib.ba.br2.ph3.pv2.ttu.tracked.underline-hover.b--white.mr4{href: '#'}
+    %a.c-jumbotron--cta.b--white.mr4{href: '#'}
       Try it live
-    %a.link.white.dib.ba.br2.ph3.pv2.ttu.underline-hover.tracked.bg-gray{href: '#'}
+    %a.c-jumbotron--cta.bg-gray{href: '#'}
       Get started
 
-  %img.c-jumbotron--screencast.mt2.br2.shadow-4{alt: 'Animated demo', src: "./images/screencast.gif", width: 700}
+  %img.c-jumbotron--screencast{alt: 'Animated demo', src: "./images/screencast.gif", width: 700}
 
-%div.pv5
-  %h3.o-title--centered.tc.f2.black-70.u-underline--small
+%div.pv5.bg-washed-yellow
+  %h3.o-title--centered
     Index all the things!
 
   %p.w-80.center.tc
     It does not matter if you use Jekyll for blogging or for documentation, the plugin is able to index your content all the same.
 
-%div
-  %h3
+%div.c-features.pv3
+  %h3.o-title--centered
     Features
-  %ul
+  %ul.list
     -# Looping through each feature
     - data.features.each do |item|
-      %li
-        %div
-          %img{src: item[:image], alt: item[:name]}
-        %div
+      %li.mb3
+        %div.dn
+          %img{src: "/images/#{item[:image]}", alt: item[:name]}
+        %div.f3.orange.mb2
           =item[:name]
         %div
           =item[:description]
 
-%div
-  %h3
+%div.pv3
+  %h3.o-title--centered
     They're using Algolia
-  %ul
+  %ul.list.flex.flex-row.flex-wrap
     -# Looping through each showcase
     - data.showcases.each do |item|
-      %li
-        %a
-          =item[:name]
-          %img{src: item[:logo]}
-          %img{src: item[:sreencast]}
-    %li
-      You?
+      %li.flex-auto.tc.w-50.w-33-ns.ph3.tc
+        %a.db.link{href: item[:url]}
+          %div.h3.mb2
+            %img.db.center.w3{src: item[:logo]}
+          %div.c-showcase--screencast-container.center
+            %img.c-showcase--stillframe{src: item[:stillframe]}
+            %img.c-showcase--screencast{src: item[:screencast]}
+          %div.mt2.b.black-80=item[:name]
+    -# %li.flex-auto.mh3.w-33
+    -#   You?

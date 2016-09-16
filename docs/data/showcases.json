@@ -1,16 +1,19 @@
 [{
   "name": "ESLint",
-  "url": "xxx",
-  "screencast": null,
-  "logo": null
+  "url": "https://eslint.org/",
+  "screencast": "/images/showcase/eslint.gif",
+  "stillframe": "/images/showcase/eslint.png",
+  "logo": "/images/showcase/eslint_logo.png"
 }, {
   "name": "Bootstrap",
-  "url": "xxx",
-  "screencast": null,
-  "logo": null
+  "url": "https://bootstrap.algolia.com/",
+  "screencast": "/images/showcase/bootstrap.gif",
+  "stillframe": "/images/showcase/bootstrap.png",
+  "logo": "/images/showcase/bootstrap_logo.png"
 }, {
   "name": "BabelJS",
-  "url": "xxx",
-  "screencast": null,
-  "logo": null
+  "url": "https://babeljs.algolia.com/",
+  "screencast": "/images/showcase/babel.gif",
+  "stillframe": "/images/showcase/babel.png",
+  "logo": "/images/showcase/babel_logo.png"
 }]

@@ -1,0 +1,32 @@
+.c-showcase--screencast-container {
+  position: relative;
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: block;
+    background-image: url('/images/showcase/mask.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  &:hover {
+    &:before {
+      background: none;
+    }
+    .c-showcase--stillframe {
+      display: none;
+    }
+    .c-showcase--screencast {
+      display: block;
+    }
+  }
+}
+.c-showcase--stillframe {
+}
+.c-showcase--screencast {
+  display: none;
+}
+

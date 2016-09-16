@@ -2,12 +2,14 @@ $header-background: #0a1724;
 $header-height: 50px;
 $header-active: #FB366E;
 
+$orange: #f90;
+
 // Jumbotron
 $gradient-start: #fc0;
-$gradient-end: #f90;
+$gradient-end: $orange;
 
 // Titles
-$title-underline-color: #f90;
+$title-underline-color: $orange;
 
 // Fonts
 $font-name: "Raleway";
