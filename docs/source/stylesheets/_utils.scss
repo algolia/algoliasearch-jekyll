@@ -1,6 +1,84 @@
-.orange {
-  color: $orange;
-}
+// Colors
+.invisible { color: transparent; }
+.orange { color: $orange; }
+.pink { color: $pink; }
 
+// Background
+.bg-dark-blue { background-color: $dark-blue; }
+.bg-pink{ background-color: $pink;}
+.hover-bg-pink:hover, .hover-bg-pink:focus { background-color: $pink;}
+
+// Border
+.b--pink { border-color: $pink; }
+.hover-b--pink:hover, .hover-b--pink:focus { border-color: $pink;}
+
+
+// Max width
 .mw-25 { max-width: 25%; }
 .mw-33 { max-width: 33%; }
+
+// Font-size
+.f7 { font-size: .75rem; }
+
+
+
+// Tachyons main overrides (might go to a PR is I find this useful)
+.hover-black-90:focus, .hover-black-90:hover { color: rgba( 0, 0, 0, .9 ); }
+.hover-black-80:focus, .hover-black-80:hover { color: rgba( 0, 0, 0, .8 ); }
+.hover-black-70:focus, .hover-black-70:hover { color: rgba( 0, 0, 0, .7 ); }
+.hover-black-60:focus, .hover-black-60:hover { color: rgba( 0, 0, 0, .6 ); }
+.hover-black-50:focus, .hover-black-50:hover { color: rgba( 0, 0, 0, .5 ); }
+.hover-black-40:focus, .hover-black-40:hover { color: rgba( 0, 0, 0, .4 ); }
+.hover-black-30:focus, .hover-black-30:hover { color: rgba( 0, 0, 0, .3 ); }
+.hover-black-20:focus, .hover-black-20:hover { color: rgba( 0, 0, 0, .2 ); }
+.hover-black-10:focus, .hover-black-10:hover { color: rgba( 0, 0, 0, .1 ); }
+.hover-black-05:focus, .hover-black-05:hover { color: rgba( 0, 0, 0, .05 ); }
+.hover-white-90:focus, .hover-white-90:hover { color: rgba( 255, 255, 255, .9 ); }
+.hover-white-80:focus, .hover-white-80:hover { color: rgba( 255, 255, 255, .8 ); }
+.hover-white-70:focus, .hover-white-70:hover { color: rgba( 255, 255, 255, .7 ); }
+.hover-white-60:focus, .hover-white-60:hover { color: rgba( 255, 255, 255, .6 ); }
+.hover-white-50:focus, .hover-white-50:hover { color: rgba( 255, 255, 255, .5 ); }
+.hover-white-40:focus, .hover-white-40:hover { color: rgba( 255, 255, 255, .4 ); }
+.hover-white-30:focus, .hover-white-30:hover { color: rgba( 255, 255, 255, .3 ); }
+.hover-white-20:focus, .hover-white-20:hover { color: rgba( 255, 255, 255, .2 ); }
+.hover-white-10:focus, .hover-white-10:hover { color: rgba( 255, 255, 255, .1 ); }
+
+.hover-bg-black-90:focus, .hover-bg-black-90:hover { background-color: rgba( 0, 0, 0, .9 ); }
+.hover-bg-black-80:focus, .hover-bg-black-80:hover { background-color: rgba( 0, 0, 0, .8 ); }
+.hover-bg-black-70:focus, .hover-bg-black-70:hover { background-color: rgba( 0, 0, 0, .7 ); }
+.hover-bg-black-60:focus, .hover-bg-black-60:hover { background-color: rgba( 0, 0, 0, .6 ); }
+.hover-bg-black-50:focus, .hover-bg-black-50:hover { background-color: rgba( 0, 0, 0, .5 ); }
+.hover-bg-black-40:focus, .hover-bg-black-40:hover { background-color: rgba( 0, 0, 0, .4 ); }
+.hover-bg-black-30:focus, .hover-bg-black-30:hover { background-color: rgba( 0, 0, 0, .3 ); }
+.hover-bg-black-20:focus, .hover-bg-black-20:hover { background-color: rgba( 0, 0, 0, .2 ); }
+.hover-bg-black-10:focus, .hover-bg-black-10:hover { background-color: rgba( 0, 0, 0, .1 ); }
+.hover-bg-black-05:focus, .hover-bg-black-05:hover { background-color: rgba( 0, 0, 0, .05 ); }
+.hover-bg-white-90:focus, .hover-bg-white-90:hover { background-color: rgba( 255, 255, 255, .9 ); }
+.hover-bg-white-80:focus, .hover-bg-white-80:hover { background-color: rgba( 255, 255, 255, .8 ); }
+.hover-bg-white-70:focus, .hover-bg-white-70:hover { background-color: rgba( 255, 255, 255, .7 ); }
+.hover-bg-white-60:focus, .hover-bg-white-60:hover { background-color: rgba( 255, 255, 255, .6 ); }
+.hover-bg-white-50:focus, .hover-bg-white-50:hover { background-color: rgba( 255, 255, 255, .5 ); }
+.hover-bg-white-40:focus, .hover-bg-white-40:hover { background-color: rgba( 255, 255, 255, .4 ); }
+.hover-bg-white-30:focus, .hover-bg-white-30:hover { background-color: rgba( 255, 255, 255, .3 ); }
+.hover-bg-white-20:focus, .hover-bg-white-20:hover { background-color: rgba( 255, 255, 255, .2 ); }
+.hover-bg-white-10:focus, .hover-bg-white-10:hover { background-color: rgba( 255, 255, 255, .1 ); }
+
+.hover-b--black-90:focus, .hover-b--black-90:hover { border-color: rgba( 0, 0, 0, .9 ); }
+.hover-b--black-80:focus, .hover-b--black-80:hover { border-color: rgba( 0, 0, 0, .8 ); }
+.hover-b--black-70:focus, .hover-b--black-70:hover { border-color: rgba( 0, 0, 0, .7 ); }
+.hover-b--black-60:focus, .hover-b--black-60:hover { border-color: rgba( 0, 0, 0, .6 ); }
+.hover-b--black-50:focus, .hover-b--black-50:hover { border-color: rgba( 0, 0, 0, .5 ); }
+.hover-b--black-40:focus, .hover-b--black-40:hover { border-color: rgba( 0, 0, 0, .4 ); }
+.hover-b--black-30:focus, .hover-b--black-30:hover { border-color: rgba( 0, 0, 0, .3 ); }
+.hover-b--black-20:focus, .hover-b--black-20:hover { border-color: rgba( 0, 0, 0, .2 ); }
+.hover-b--black-10:focus, .hover-b--black-10:hover { border-color: rgba( 0, 0, 0, .1 ); }
+.hover-b--black-05:focus, .hover-b--black-05:hover { border-color: rgba( 0, 0, 0, .05 ); }
+.hover-b--white-90:focus, .hover-b--white-90:hover { border-color: rgba( 255, 255, 255, .9 ); }
+.hover-b--white-80:focus, .hover-b--white-80:hover { border-color: rgba( 255, 255, 255, .8 ); }
+.hover-b--white-70:focus, .hover-b--white-70:hover { border-color: rgba( 255, 255, 255, .7 ); }
+.hover-b--white-60:focus, .hover-b--white-60:hover { border-color: rgba( 255, 255, 255, .6 ); }
+.hover-b--white-50:focus, .hover-b--white-50:hover { border-color: rgba( 255, 255, 255, .5 ); }
+.hover-b--white-40:focus, .hover-b--white-40:hover { border-color: rgba( 255, 255, 255, .4 ); }
+.hover-b--white-30:focus, .hover-b--white-30:hover { border-color: rgba( 255, 255, 255, .3 ); }
+.hover-b--white-20:focus, .hover-b--white-20:hover { border-color: rgba( 255, 255, 255, .2 ); }
+.hover-b--white-10:focus, .hover-b--white-10:hover { border-color: rgba( 255, 255, 255, .1 ); }

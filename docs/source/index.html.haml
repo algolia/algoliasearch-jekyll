@@ -45,7 +45,7 @@
   %ul.list.flex.flex-row.flex-wrap
     -# Looping through each showcase
     - data.showcases.each do |item|
-      %li.flex-auto.tc.w-50.w-33-ns.ph3.tc
+      %li.flex-auto.tc.w-50.w-33-ns.ph3
         %a.db.link{href: item[:url]}
           %div.h3.mb2
             %img.db.center.w3{src: item[:logo]}
@@ -53,5 +53,20 @@
             %img.c-showcase--stillframe{src: item[:stillframe]}
             %img.c-showcase--screencast{src: item[:screencast]}
           %div.mt2.b.black-80=item[:name]
-    -# %li.flex-auto.mh3.w-33
-    -#   You?
+
+%div.pv3.bg-black-10
+  %h3.o-title--centered
+    Easy to install
+  %div.flex.mh5.mb5
+    %div.flex-auto.w-33.ph3
+      %div.f2.fl.mr2.orange 1
+      %div.mt2.lh-title
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit 
+    %div.flex-auto.w-33.ph3
+      %div.f2.fl.mr2.orange 2
+      %div.mt2.lh-title
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit 
+    %div.flex-auto.w-33.ph3
+      %div.f2.fl.mr2.orange 3
+      %div.mt2.lh-title
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit 

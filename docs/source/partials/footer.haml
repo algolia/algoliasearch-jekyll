@@ -1,30 +1,27 @@
--# %section.ac-footer
--# 
--#   .ac-footer-container
--#     %p.ac-footer-links
--#       Code licensed under
--#       %a.ac-footer-link-item{:href => "LICENSE"} MIT
--#       %br/
--#       %a.ac-footer-link-item{:href => "https://github.com/"} Github
--#       %a.ac-footer-link-item{:href => "https://github.com/issues"} Issues
--#       %a.ac-footer-link-item{:href => "https://www.algolia.com/policies/privacy"} Privacy policy
--# 
--#   .ac-footer-container.ac-footer-brand
--#     %p This project is part of
--#     %img.ac-footer-brand-icon{:src => "https://res.cloudinary.com/hilnmyskv/image/upload/logo-community.svg"}/
--#     %figure
--#       %img.ac-footer-brand-logo{:src => "https://res.cloudinary.com/hilnmyskv/image/upload/v1463417234/algolia-community_n6tixd.svg"}/
--#       %figcaption Algolia Community
--# 
--#     %a.ac-footer-btn.ac-footer-btn-cta{:href => "https://community.algolia.com/"} See More
--#     %span.ac-icon.ac-icon-love-dark
--# 
--#   %p.ac-footer-version Latest version: &lt;numVersion>
--# 
--#   .ac-footer-actions
--#     .footer-container
--#       %p Build unique search experiences with Algolia
--#       %a.ac-footer-btn.ac-footer-btn-ghost-grey{:href => "https://www.algolia.com/why?utm_medium=social-owned&utm_source=jekyll%20website&utm_campaign=homepage&utm_term=why"}
--#         See Why
--#         %span.ac-icon-triangle
--#       %a.ac-footer-btn.ac-footer-btn-ghost-pink{:href => "https://www.algolia.com/users/sign_up?utm_medium=social-owned&utm_source=jekyll%20website&utm_campaign=homepage&utm_term=get_started"} Get Started For Free
+.c-footer
+
+  .pv3.f6
+    Code licensed under
+    %a.c-footer--link{:href => "LICENSE"} MIT
+    %a.c-footer--link{:href => "https://github.com/"} Github
+    %a.c-footer--link{:href => "https://github.com/issues"} Issues
+    %a.c-footer--link{:href => "https://www.algolia.com/policies/privacy"} Privacy policy
+
+  .c-footer--brand
+    .c-footer--brand-intro This project is part of
+    %img.c-footer--brand-icon{:src => "https://res.cloudinary.com/hilnmyskv/image/upload/logo-community.svg"}/
+    %figure
+      %img.c-footer--brand-logo{:src => "https://res.cloudinary.com/hilnmyskv/image/upload/v1463417234/algolia-community_n6tixd.svg"}/
+      %figcaption.invisible Algolia Community
+
+    %a.c-footer--button{:href => "https://community.algolia.com/"} See More
+    -# %span.ac-icon.ac-icon-love-dark
+
+  .c-footer--version Latest version: &lt;numVersion&gt;
+
+  .c-footer--actions
+    .pt3.pb2.ttu.f6.white-50 Build unique search experiences with Algolia
+    %a.c-footer--actions-button.hover-bg-white-50.hover-b--white-10{:href => "https://www.algolia.com/why?utm_medium=social-owned&utm_source=#{config[:product_shortname]}%20website&utm_campaign=homepage&utm_term=why"}
+      See Why
+      %span.ac-icon-triangle
+    %a.c-footer--actions-button.pink.b--pink.hover-bg-pink.hover-b--pink{:href => "https://www.algolia.com/users/sign_up?utm_medium=social-owned&utm_source=#{config[:product_shortname]}%20website&utm_campaign=homepage&utm_term=get_started"} Get Started For Free

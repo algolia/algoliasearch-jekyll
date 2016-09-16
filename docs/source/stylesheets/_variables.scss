@@ -1,8 +1,11 @@
-$header-background: #0a1724;
-$header-height: 50px;
-$header-active: #FB366E;
-
 $orange: #f90;
+$pink: #FB366E;
+$dark-blue: #0a1724;
+
+// Header
+$header-background: $dark-blue;
+$header-height: 50px;
+$header-active: $pink;
 
 // Jumbotron
 $gradient-start: #fc0;

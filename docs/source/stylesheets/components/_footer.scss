@@ -1,178 +1,121 @@
-.ac-footer {
-  min-height: 830px;
-  position: relative;
-  text-align: center;
-  color: $white-75;
+.c-footer--link {
+  @extend .link;
+  @extend .pink;
+  @extend .ml3;
+  & + .c-footer--link:before {
+    content: '•';
+    @extend .white-70;
+    @extend .mr3;
+  }
+}
+
+
+.c-footer {
+  @extend .relative;
+  @extend .white-70;
+  @extend .tc;
+  min-height: 870px;
   background-color: #1d3657;
   background-image: url("../images/background_footer.svg");
   background-repeat: no-repeat;
   background-position:  center center;
   background-size: 1420px;
-  font-family: $font-settings;
-  font-weight: 600;
-  box-sizing: border-box;
+}
 
-  p {
-    font-size: 12px;
-    font-weight: 300;
-    color: $white-75
-  }
+.c-footer--brand {
+  max-width: 740px;
+  max-height: 400px;
+  width: 70vw;
+  height: 100%;
+  position: absolute;
+  top: 48%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
 
-  .ac-footer-brand {
-    max-width: 740px;
-    max-height: 400px;
-    width: 70vw;
-    height: 100%;
-    position: absolute;
-    top: 48%;
-    left: 50%;
-    transform: translate(-50%,-50%);
+.c-footer--brand-intro {
+  @extend .ttu;
+  @extend .b;
+  @extend .f7;
+  color: #496f92;
+}
 
-    &:hover {
-      .ac-icon-love-dark {
-        background: url('../images/icon-heart-light.svg')no-repeat center center / contain
-      }
-    }
-
-    .ac-footer-brand-icon {
-      width: 110px;
-      margin-top: 20px;
-    }
-
-    figure {
-      margin: 20px 0 0;
-
-      .ac-footer-brand-logo {
-        margin: 0;
-        width: inherit;
-      }
-
-      figcaption {
-        text-indent: -9999px;
-        color: transparent;
-      }
-    }
-  }
-
-
-  .ac-footer-brand p,
-  .ac-footer-version {
-    color: #496f92;
-    text-transform: uppercase;
-    font-weight: bold;
-    font-size: 12px;
-    margin: 0;
-    font-weight: 600;
-    float: none;
-  }
-
-
-  .ac-footer-links {
-    width: 100%;
-    padding: 1em 0px;
-    float: left;
-
-    br {
-      @media (min-width: 960px) {
-        display: none;
-      }
-    }
-  }
-
-
-  .ac-footer-link-item {
-    font-size: 12px;
-    color: $red-pink;
-    font-weight: 400;
-    margin-left: $margin;
-    text-decoration: none;
-
-    &:not(:first-of-type):before {
-      content: '•';
-      position: relative;
-      margin-right: $margin;
-      color: $white-75;
-      font-size: 1.2em;
-    }
-  }
-
-
-  .ac-footer-container {
-    padding-top: 0px;
-    padding-bottom: 0px;
-  }
-
-
-  .ac-footer-btn.ac-footer-btn-cta {
-    max-width: 160px;
-    margin: 32px auto;
-  }
-
-
-  .ac-footer-version {
-    position: relative;
-    float: left;
-    width: 100%;
-    top: 620px;
-  }
-
-
-  .ac-footer-actions {
-    width: 100%;
-    background: $black;
-    position: absolute;
-    bottom: 0;
-    min-height: $navigation-height;
-
-    p {
-      display: inline;
-      line-height: $navigation-height;
-      padding: 0;
-      margin:0;
-      font-size: 14px;
-      color: $steel;
-      text-transform: uppercase;
-    }
-
-    a {
-      display: inline-block;
-      margin-left: 0;
-
-      &:nth-child(2) {
-        margin-left: 32px;
-        margin-right: $margin;
-      }
-    }
-  }
-
-
-  .ac-footer-btn,
-  [class*="ac-footer-btn-ghost"] {
-    background: $black;
-    border: 1px solid mix($black, #fff, 90%);
-    color: #fff;
-    height: 40px;
-    margin: 32px auto;
-    line-height: 40px;
-    padding: 0 1em;
-    display: block;
-    text-decoration: none;
-    border-radius: 3px;
-    text-transform: uppercase;
-    font-weight: 600;
-    font-size: 12px;
+.c-footer--brand-icon {
+  @extend .mt3;
+  width: 110px;
+}
+ 
+.c-footer--button {
+    @extend .bg-dark-blue;
+    @extend .white;
+    @extend .pv3;
+    @extend .link;
+    @extend .db;
+    @extend .center;
+    @extend .br2;
+    @extend .ttu;
+    @extend .b;
+    @extend .f7;
+    @extend .mw4;
+    @extend .hover-bg-pink;
+    border: 1px solid #232e3a;
     box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2), 0 2px 4px 0 rgba(0, 0, 0, 0.1);
     transition: background 0.1s ease;
-    cursor: pointer;
+}
 
-    &:hover,
-    &:active {
-      background: $red-pink
-    }
-  }
+.c-footer--version {
+  @extend .absolute;
+  @extend .w-100;
+  top: 680px;
+}
+
+.c-footer--actions {
+  @extend .bg-dark-blue;
+  @extend .absolute;
+  @extend .bottom-0;
+  @extend .w-100;
+}
+.c-footer--actions-button {
+  @extend .white-50;
+  @extend .ba;
+  @extend .hover-white;
+  @extend .db;
+  @extend .link;
+  @extend .mh3;
+  @extend .mv2;
+  @extend .pv3;
+  @extend .br1;
+  @extend .ttu;
+  @extend .f7;
+  @extend .b;
+}
+
+//   p {
+//     @extend .white-50;
+//     @extend .db;
+//     display: inline;
+//     // line-height: $navigation-height;
+//     padding: 0;
+//     margin:0;
+//     font-size: 14px;
+//     text-transform: uppercase;
+//   }
+// 
+//   a {
+//     display: inline-block;
+//     margin-left: 0;
+// 
+//     &:nth-child(2) {
+//       margin-left: 32px;
+//       // margin-right: $margin;
+//     }
+//   }
+// }
 
 
-  [class*="ac-footer-btn-ghost"] {
+
+
+  [class*="c-footer-btn-ghost"] {
     background: transparent;
     border-color: currentColor;
     font-weight: bold;
@@ -181,12 +124,12 @@
   }
 
 
-  .ac-footer-btn-ghost-grey {
-    color:  $steel;
+  .c-footer-btn-ghost-grey {
+    @extend .white-50;
 
     &:hover {
-      background: $steel;
-      border-color: $steel;
+      @extend .bg-white-50;
+      @extend .b--white-50;
       color: #fff;
 
       .ico-triangle {
@@ -196,12 +139,12 @@
   }
 
 
-  .ac-footer-btn-ghost-pink {
-    color:  $red-pink;
+  .c-footer-btn-ghost-pink {
+    color:  $pink;
 
     &:hover {
-      background: $red-pink;
-      border-color: $red-pink;
+      background: $pink;
+      border-color: $pink;
       color: #fff;
     }
   }
@@ -215,27 +158,26 @@
     height: 30px;
     margin: auto;
   }
-  .ac-icon-love-dark {
-    background: url('../images/icon-heart-dark.svg')no-repeat center center / contain
-  }
-}
+  // .ac-icon-love-dark {
+  //   background: url('../images/icon-heart-dark.svg')no-repeat center center / contain
+  // }
 
 
 /*! On small devices */
-@media (max-width: $bp-medium){
-  .ac-footer {
+@media (--breakpoint-medium) {
+  .c-footer {
     background-size: cover;
     background-position: 50% 70px;
 
-    .ac-footer-links {
+    .c-footer-links {
       text-align: center;
 
-      .ac-footer-links:nth-child(2) {
-        margin-bottom: $margin;
+      .c-footer-links:nth-child(2) {
+        // margin-bottom: $margin;
         display: block;
       }
 
-      .ac-footer-link-item:nth-child(3):before {
+      .c-footer-link-item:nth-child(3):before {
         display: none;
       }
     }
@@ -244,10 +186,10 @@
       display: none;
     }
 
-    .ac-footer-actions {
-      width: calc(#{$margin} + 100%);
-      left: -$margin;
-      padding-bottom: $margin;
+    .c-footer-actions {
+      // width: calc(#{$margin} + 100%);
+      // left: -$margin;
+      // padding-bottom: $margin;
       text-align: center;
 
       p {
@@ -257,7 +199,7 @@
         text-align: center;
       }
 
-      .ac-footer-btn,
+      .c-footer-btn,
       a:nth-child(2) {
         width: calc(100% - 32px);
         max-width: calc(100% - 32px);
@@ -274,15 +216,15 @@
 // Footer heartbeat
 @keyframes pulse{
   0% {
-    box-shadow: 0 0 0 0 rgba($red-pink, 0.4);
+    box-shadow: 0 0 0 0 rgba($pink, 0.4);
   }
   70% {
 
-    box-shadow: 0 0 0 30px rgba($red-pink, 0);
+    box-shadow: 0 0 0 30px rgba($pink, 0);
   }
   100% {
 
-    box-shadow: 0 0 0 0 rgba($red-pink, 0);
+    box-shadow: 0 0 0 0 rgba($pink, 0);
   }
 }
 
@@ -300,33 +242,38 @@
   }
 }
 
-.ac-icon-love-dark {
-  display: block;
-  position: relative;
+// .ac-icon-love-dark {
+//   display: block;
+//   position: relative;
+// 
+//   &:before {
+//     content: '';
+//     display: block;
+//     width: 8px;
+//     height: 8px;
+//     position: absolute;
+//     top: 45%;
+//     bottom: 0;
+//     left: 50%;
+//     transform: translate(-50%,-50%);
+//     right: 0;
+//     z-index: -1;
+//     border-radius: 100%;
+//   }
+// }
 
-  &:before {
-    content: '';
-    display: block;
-    width: 8px;
-    height: 8px;
-    position: absolute;
-    top: 45%;
-    bottom: 0;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    right: 0;
-    z-index: -1;
-    border-radius: 100%;
-  }
-}
-
-.ac-footer-container:hover .ac-icon-love-dark{
-  animation: pulseHeart 1s ease infinite;
-
-  &:before {
-    animation: pulse 1s ease infinite !important;
-  }
-}
+// .c-footer-container:hover .ac-icon-love-dark{
+//   animation: pulseHeart 1s ease infinite;
+// 
+//   &:before {
+//     animation: pulse 1s ease infinite !important;
+//   }
+// }
+// &:hover {
+//   .ac-icon-love-dark {
+//     background: url('../images/icon-heart-light.svg')no-repeat center center / contain
+//   }
+// }
 
 
 .ac-icon-triangle {
@@ -334,7 +281,7 @@
   height: 0;
   border-top: 5px solid transparent;
   border-bottom: 5px solid transparent;
-  border-left: 5px solid $steel;
+  border-left: 5px solid var(--white-50);
   position: relative;
   display: inline-block;
   margin-left: 8px;
