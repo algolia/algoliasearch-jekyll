@@ -1,12 +1,14 @@
-%header.l-header.fixed.top-0.w-100.ph4.flex.flex-row.z-5
+%header.l-header.fixed.top-0.w-100.ph3.ph4-ns.flex.flex-row.z-5
 
   -# Community logo
   %div.flex-auto.v-mid
     %a.l-header--logo.dib.v-mid{'href': 'https://community.algolia.com/', 'title': 'Algolia Community'}
       %img.dn.db-l{:alt => "Algolia Community", :src => "https://res.cloudinary.com/hilnmyskv/image/upload/logo-community-inline-dark.svg", :width => "200"}/
-      %img.db.dn-l{:alt => "Algolia Community", :src => "https://res.cloudinary.com/hilnmyskv/image/upload/v1461180081/logo-community-sm.svg"}/
+      %img.db.dn-l{:alt => "Algolia Community", :src => "https://res.cloudinary.com/hilnmyskv/image/upload/v1461180081/logo-community-sm.svg", height: 40}/
     %a.l-header--breadcrumb.dib{'href': './', 'title': 'Home'}
       =config[:product_shortname]
+
+
 
   -# Search input
   %div.l-header--search.bg-red
@@ -26,8 +28,10 @@
             <symbol id="sbx-icon-clear-3" viewBox="0 0 40 40"><path d="M16.228 20L1.886 5.657 0 3.772 3.772 0l1.885 1.886L20 16.228 34.343 1.886 36.228 0 40 3.772l-1.886 1.885L23.772 20l14.342 14.343L40 36.228 36.228 40l-1.885-1.886L20 23.772 5.657 38.114 3.772 40 0 36.228l1.886-1.885L16.228 20z" fill-rule="evenodd"/></symbol>
             <symbol id="sbx-icon-search-13" viewBox="0 0 12 12"><path d="M12 11.077c0-.245-.1-.483-.267-.65L9.26 7.955c.584-.843.894-1.853.894-2.877C10.154 2.272 7.882 0 5.077 0S0 2.272 0 5.077s2.272 5.077 5.077 5.077c1.024 0 2.034-.31 2.877-.894l2.474 2.466c.166.173.404.274.65.274.504 0 .922-.418.922-.923zm-3.692-6c0 1.78-1.45 3.23-3.23 3.23-1.782 0-3.232-1.45-3.232-3.23s1.45-3.23 3.23-3.23c1.782 0 3.232 1.45 3.232 3.23z" fill="#FFF" fill-rule="evenodd" opacity="0.85"/></symbol>
 
+
+
   -# Menu
-  %ul.l-header--menu.flex-auto.list.ma0.tr
+  %ul.l-header--menu.flex-auto.list.ma0.tr.dn.db-l
     -# Looping through each defined menu element
     - data.menu.each do |item|
       %li.dib.relative.ph2{nav_active(item[:url])}
@@ -36,3 +40,14 @@
     %li.dib.ph2
       %a.l-header--github{:href => config[:product_repo], :title => 'GitHub repository'}
         %img{:alt => "GitHub repository", :src => "./images/icon-github.svg", :width => "26"}/
+
+  -# Adding `select` for small screens
+  .flex-auto.tr.db.dn-l
+    %select.js-menu-smallscreen
+      %option{value: 'index.html', selected: current_page.path == 'index.html'}
+        Home
+      - data.menu.each do |item|
+        %option{selected: item[:url] == current_page.path, value: item[:url]}
+          =item[:name]
+      %option{value: config[:product_repo]}
+        GitHub repository

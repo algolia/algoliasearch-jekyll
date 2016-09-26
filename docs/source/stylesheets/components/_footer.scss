@@ -9,7 +9,6 @@
   }
 }
 
-
 .c-footer {
   @extend .relative;
   @extend .white-70;
@@ -164,54 +163,54 @@
 
 
 /*! On small devices */
-@media (--breakpoint-medium) {
-  .c-footer {
-    background-size: cover;
-    background-position: 50% 70px;
-
-    .c-footer-links {
-      text-align: center;
-
-      .c-footer-links:nth-child(2) {
-        // margin-bottom: $margin;
-        display: block;
-      }
-
-      .c-footer-link-item:nth-child(3):before {
-        display: none;
-      }
-    }
-
-    hr {
-      display: none;
-    }
-
-    .c-footer-actions {
-      // width: calc(#{$margin} + 100%);
-      // left: -$margin;
-      // padding-bottom: $margin;
-      text-align: center;
-
-      p {
-        font-size: 12px;
-        float: left;
-        width: 100%;
-        text-align: center;
-      }
-
-      .c-footer-btn,
-      a:nth-child(2) {
-        width: calc(100% - 32px);
-        max-width: calc(100% - 32px);
-        margin: 0 auto;
-        margin-bottom: 8px;
-        float: none;
-        position: relative;
-        left: 8px;
-      }
-    }
-  }
-}
+// @media (--breakpoint-medium) {
+//   .c-footer {
+//     background-size: cover;
+//     background-position: 50% 70px;
+// 
+//     .c-footer-links {
+//       text-align: center;
+// 
+//       .c-footer-links:nth-child(2) {
+//         // margin-bottom: $margin;
+//         display: block;
+//       }
+// 
+//       .c-footer-link-item:nth-child(3):before {
+//         display: none;
+//       }
+//     }
+// 
+//     hr {
+//       display: none;
+//     }
+// 
+//     .c-footer-actions {
+//       // width: calc(#{$margin} + 100%);
+//       // left: -$margin;
+//       // padding-bottom: $margin;
+//       text-align: center;
+// 
+//       p {
+//         font-size: 12px;
+//         float: left;
+//         width: 100%;
+//         text-align: center;
+//       }
+// 
+//       .c-footer-btn,
+//       a:nth-child(2) {
+//         width: calc(100% - 32px);
+//         max-width: calc(100% - 32px);
+//         margin: 0 auto;
+//         margin-bottom: 8px;
+//         float: none;
+//         position: relative;
+//         left: 8px;
+//       }
+//     }
+//   }
+// }
 
 // Footer heartbeat
 @keyframes pulse{
