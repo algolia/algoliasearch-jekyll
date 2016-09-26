@@ -1,33 +1,17 @@
 [{
-  "name": "Open-Source",
-  "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-  "image": "/images/features/01.png"
+  "name": "Relevant",
+  "description": "We use the page hierarchy structures to provide the most relevant results.",
+  "image": "/images/features/relevant.png"
 }, {
-  "name": "Fast and relevant",
-  "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-  "image": "/images/features/01.png"
-}, {
-  "name": "Easy to implement",
-  "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-  "image": "/images/features/01.png"
-}, {
-  "name": "Autocomplete menu",
-  "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-  "image": "/images/features/01.png"
-}, {
-  "name": "Aware of the hierarchy",
-  "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-  "image": "/images/features/01.png"
-}, {
-  "name": "GitHub pages ready",
-  "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-  "image": "/images/features/01.png"
+  "name": "Fast",
+  "description": "Get results in milliseconds and display content at each keystroke.",
+  "image": "/images/features/fast.png"
 }, {
   "name": "Customizable",
-  "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-  "image": "/images/features/01.png"
+  "description": "All settings can be configured, and you can even plug your own Ruby code through hooks.",
+  "image": "/images/features/customizable.png"
 }, {
-  "name": "Compatible with other plugins",
-  "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-  "image": "/images/features/01.png"
+  "name": "GitHub-ready",
+  "description": "Host your website on GitHub pages and use Algolia for the search. No backend required.",
+  "image": "/images/features/github.png"
 }]

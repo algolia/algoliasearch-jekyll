@@ -27,6 +27,11 @@ config[:product_url] = 'https://community.algolia.com/jekyll/'
 config[:product_repo] = 'https://github.com/algolia/algoliasearch-jekyll'
 config[:product_utm] = 'jekyll_website'
 
+# Jekyll-plugin specific values
+require_relative '../lib/version'
+config[:plugin_version] = AlgoliaSearchJekyllVersion.to_s
+config[:plugin_rubygems_url] = "https://rubygems.org/gems/algoliasearch-jekyll/versions/#{config[:plugin_version]}"
+
 # Reload the browser automatically whenever files change
 configure :development do
   activate :livereload

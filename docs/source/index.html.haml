@@ -3,37 +3,37 @@
 -# Jumbotron
 %div.c-jumbotron.white.ph3.pt3.tc
   %h1.normal
-    %img.mr3{alt: 'Algolia', src: "./images/algolia-logo-white.svg", width: 190}
+    %img.db.center.mb3.di-ns.mr3-ns{alt: 'Algolia', src: "./images/algolia-logo-white.svg", width: 190}
     for
-    %img{alt: 'Jekyll', src: './images/jekyll.png', width: 210}
+    %img.db.center.di-ns{alt: 'Jekyll', src: './images/jekyll.png', width: 210}
 
-  %p.f3.w-50.center
+  %p.f3.w-50-l.center
     Indexing all your Jekyll content with a simple command
 
-  %div.f6.mt2
-    %a.c-jumbotron--cta.b--white.mr4{href: '#'}
+  %div.f6.mt2.tc
+    %a.c-jumbotron--cta.b--white.mb2.dib-ns.mr2-ns{href: '#'}
       Try it live
-    %a.c-jumbotron--cta.bg-gray{href: '#'}
+    %br.dn-ns
+    %a.c-jumbotron--cta.bg-gray.dib-ns{href: '#'}
       Get started
 
   %img.c-jumbotron--screencast{alt: 'Animated demo', src: "./images/screencast.gif", width: 700}
 
-%div.pv5.bg-washed-yellow
+%div.pv5.bg-washed-yellow.ph3
   %h3.o-title--centered
     Index all the things!
 
   %p.w-80.center.tc
     It does not matter if you use Jekyll for blogging or for documentation, the plugin is able to index your content all the same.
 
-%div.c-features.pv3
+%div.c-features.pv3.ph3.ph6-l
   %h3.o-title--centered
     Features
-  %ul.list
+  %ul.list.pl0.flex.flex-row.flex-wrap
     -# Looping through each feature
-    - data.features.each do |item|
-      %li.mb3
-        %div.dn
-          %img{src: "/images/#{item[:image]}", alt: item[:name]}
+    - data.features.each_with_index do |item, index|
+      %li.mb3.flex-auto.w-100.w-50-ns.pa3-ns
+        %div.dn.db-l.w4.h4.ba.bw1.b--orange.br-100{style: "background-image: url(#{item[:image]})", class: [index%2 == 0 ? 'fr ml3' : 'fl mr3']}
         %div.f3.orange.mb2
           =item[:name]
         %div
@@ -54,19 +54,3 @@
             %img.c-showcase--screencast{src: item[:screencast]}
           %div.mt2.b.black-80=item[:name]
 
-%div.pv3.bg-black-10
-  %h3.o-title--centered
-    Easy to install
-  %div.flex.mh5.mb5
-    %div.flex-auto.w-33.ph3
-      %div.f2.fl.mr2.orange 1
-      %div.mt2.lh-title
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit 
-    %div.flex-auto.w-33.ph3
-      %div.f2.fl.mr2.orange 2
-      %div.mt2.lh-title
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit 
-    %div.flex-auto.w-33.ph3
-      %div.f2.fl.mr2.orange 3
-      %div.mt2.lh-title
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit 

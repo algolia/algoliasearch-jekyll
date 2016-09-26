@@ -1,11 +1,11 @@
 .c-footer
 
-  .pv3.f6
-    Code licensed under
-    %a.c-footer--link{:href => "LICENSE"} MIT
+  .pv3.f6.ph4
+    %a.c-footer--link{:href => "LICENSE"} MIT License
     %a.c-footer--link{:href => "https://github.com/"} Github
     %a.c-footer--link{:href => "https://github.com/issues"} Issues
     %a.c-footer--link{:href => "https://www.algolia.com/policies/privacy"} Privacy policy
+
 
   .c-footer--brand
     .c-footer--brand-intro This project is part of
@@ -15,16 +15,16 @@
       %figcaption.invisible Algolia Community
 
     %a.c-footer--button{:href => "https://community.algolia.com/"} See More
-    -# %span.ac-icon.ac-icon-love-dark
 
-  .c-footer--version Latest version: &lt;numVersion&gt;
+  .c-footer--version 
+    Latest version:
+    %a.c-footer--link{href: config[:plugin_rubygems_url]}=config[:plugin_version]
 
-  .c-footer--actions
-    .pt3.pb2.ttu.f6.white-50 Build unique search experiences with Algolia
-    %a.c-footer--actions-button.hover-bg-white-50.hover-b--white-10{:href => "https://www.algolia.com/why?utm_medium=social-owned&utm_source=#{config[:product_shortname]}%20website&utm_campaign=homepage&utm_term=why"}
+  .c-footer--actions.pv3-l
+    .pt3.pb2.ttu.f6.white-50.dib-l Build unique search experiences with Algolia
+    %a.c-footer--actions-button.dib-l.ph4-l.hover-bg-white-50.hover-b--white-10{:href => "https://www.algolia.com/why?utm_medium=social-owned&utm_source=#{config[:product_shortname]}%20website&utm_campaign=homepage&utm_term=why"}
       See Why
-      %span.ac-icon-triangle
-    %a.c-footer--actions-button.pink.b--pink.hover-bg-pink.hover-b--pink{:href => "https://www.algolia.com/users/sign_up?utm_medium=social-owned&utm_source=#{config[:product_shortname]}%20website&utm_campaign=homepage&utm_term=get_started"} Get Started For Free
+    %a.c-footer--actions-button.dib-l.ph4-l.pink.b--pink.hover-bg-pink.hover-b--pink{:href => "https://www.algolia.com/users/sign_up?utm_medium=social-owned&utm_source=#{config[:product_shortname]}%20website&utm_campaign=homepage&utm_term=get_started"} Get Started For Free
 
 
 %script{src: "//cdn.jsdelivr.net/jquery/2/jquery.min.js"}
