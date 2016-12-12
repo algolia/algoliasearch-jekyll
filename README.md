@@ -71,7 +71,8 @@ You can define it on the same line as your command, allowing you to type
 Note that your API key should have write access to both the `index_name` and
 `_tmp` suffixed version of it (eg. `your_index_name` and `your_index_name_tmp`)
 in the previous example). This is due to the way we do atomic pushes by pushing
-to a temporary index and then renaming it.
+to a temporary index and then renaming it. The easiest way is to create a key
+with access to in the `index_name*` index (note the `*` suffix).
 
 ### ⚠ Other, unsecure, method ⚠
 
