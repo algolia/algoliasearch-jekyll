@@ -185,7 +185,7 @@ class AlgoliaSearchJekyllPush < Jekyll::Command
   class << self
     # Hook to exclude some files from indexing
     def custom_hook_excluded_file?(file)
-      return true if filepath =~ %r{^/excluded_dir/}
+      return true if file.path =~ %r{^/excluded_dir/}
       false
     end
   end
