@@ -64,7 +64,7 @@ You can also define the `ALGOLIA_APPLICATION_ID` and `ALGOLIA_INDEX_NAME`
 environment variables. If present, they will be used instead of the options in
 `_config.yml`.
 
-You write api key will be read from the `ALGOLIA_API_KEY` environment variable.
+Your write api key will be read from the `ALGOLIA_API_KEY` environment variable.
 You can define it on the same line as your command, allowing you to type
 `ALGOLIA_API_KEY='your_write_api_key' jekyll algolia push`.
 
