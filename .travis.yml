@@ -10,7 +10,6 @@ rvm:
  - 2.3.4
  - 2.2.5
  - 2.1.10
- - 2.0
 notifications:
   email:
     on_success: never
