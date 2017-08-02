@@ -110,7 +110,7 @@ Gem::Specification.new do |s|
       s.add_runtime_dependency(%q<algoliasearch>.freeze, ["~> 1.4"])
       s.add_runtime_dependency(%q<appraisal>.freeze, ["~> 2.1.0"])
       s.add_runtime_dependency(%q<awesome_print>.freeze, ["~> 1.6"])
-      s.add_runtime_dependency(%q<json>.freeze, ["~> 1.8"])
+      s.add_runtime_dependency(%q<json>.freeze, ["~> 1.8.6"])
       s.add_runtime_dependency(%q<nokogiri>.freeze, [">= 1.7.2", "~> 1.7"])
       s.add_runtime_dependency(%q<verbal_expressions>.freeze, ["~> 0.1.5"])
       s.add_development_dependency(%q<rake>.freeze, ["< 11.0"])
@@ -122,11 +122,12 @@ Gem::Specification.new do |s|
       s.add_development_dependency(%q<rspec>.freeze, ["~> 3.0"])
       s.add_development_dependency(%q<rubocop>.freeze, ["~> 0.31"])
       s.add_development_dependency(%q<simplecov>.freeze, ["~> 0.10"])
+      s.add_development_dependency(%q<rack>.freeze, ["< 2"])
     else
       s.add_dependency(%q<algoliasearch>.freeze, ["~> 1.4"])
       s.add_dependency(%q<appraisal>.freeze, ["~> 2.1.0"])
       s.add_dependency(%q<awesome_print>.freeze, ["~> 1.6"])
-      s.add_dependency(%q<json>.freeze, ["~> 1.8"])
+      s.add_dependency(%q<json>.freeze, ["~> 1.8.6"])
       s.add_dependency(%q<nokogiri>.freeze, [">= 1.7.2", "~> 1.7"])
       s.add_dependency(%q<verbal_expressions>.freeze, ["~> 0.1.5"])
       s.add_dependency(%q<rake>.freeze, ["< 11.0"])
@@ -138,12 +139,13 @@ Gem::Specification.new do |s|
       s.add_dependency(%q<rspec>.freeze, ["~> 3.0"])
       s.add_dependency(%q<rubocop>.freeze, ["~> 0.31"])
       s.add_dependency(%q<simplecov>.freeze, ["~> 0.10"])
+      s.add_dependency(%q<rack>.freeze, ["< 2"])
     end
   else
     s.add_dependency(%q<algoliasearch>.freeze, ["~> 1.4"])
     s.add_dependency(%q<appraisal>.freeze, ["~> 2.1.0"])
     s.add_dependency(%q<awesome_print>.freeze, ["~> 1.6"])
-    s.add_dependency(%q<json>.freeze, ["~> 1.8"])
+    s.add_dependency(%q<json>.freeze, ["~> 1.8.6"])
     s.add_dependency(%q<nokogiri>.freeze, [">= 1.7.2", "~> 1.7"])
     s.add_dependency(%q<verbal_expressions>.freeze, ["~> 0.1.5"])
     s.add_dependency(%q<rake>.freeze, ["< 11.0"])
@@ -155,6 +157,7 @@ Gem::Specification.new do |s|
     s.add_dependency(%q<rspec>.freeze, ["~> 3.0"])
     s.add_dependency(%q<rubocop>.freeze, ["~> 0.31"])
     s.add_dependency(%q<simplecov>.freeze, ["~> 0.10"])
+    s.add_dependency(%q<rack>.freeze, ["< 2"])
   end
 end
 
