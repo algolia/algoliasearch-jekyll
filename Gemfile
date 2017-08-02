@@ -8,6 +8,7 @@ gem 'nokogiri', '~> 1.7', '>= 1.7.2'
 gem 'verbal_expressions', '~> 0.1.5'
 
 group :development do
+  gem 'rake', '< 11.0'
   gem 'coveralls', '~> 0.8'
   gem 'flay', '~> 2.6'
   gem 'flog', '~> 4.3'
