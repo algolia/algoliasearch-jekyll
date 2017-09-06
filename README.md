@@ -42,7 +42,7 @@ Then, add `algoliasearch-jekyll` to your `_config.yml` file, under the `gems`
 section, like this:
 
 ```yaml
-gems:
+plugins:
   - algoliasearch-jekyll
 ```
 
