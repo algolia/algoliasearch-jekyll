@@ -109,6 +109,18 @@ algolia:
   record_css_selector: 'p,ul'
 ```
 
+#### `allowed_extensions`
+
+Define additional extensions to be indexed. The default behaviour is to index
+only markdown and HTML files.
+
+```yml
+algolia:
+  allowed_extensions:
+    - adoc
+    - ad
+```
+
 #### `settings`
 
 Here you can pass any specific [index settings][5] to your Algolia index. All
