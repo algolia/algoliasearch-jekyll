@@ -32,7 +32,7 @@ source 'https://rubygems.org'
 gem 'jekyll', '~> 2.5.3'
 
 group :jekyll_plugins do
-  gem 'algoliasearch-jekyll', '~> 0.8.2'
+  gem 'algoliasearch-jekyll', '~> 0.9.0'
 end
 ```
 
@@ -42,7 +42,7 @@ Then, add `algoliasearch-jekyll` to your `_config.yml` file, under the `gems`
 section, like this:
 
 ```yaml
-gems:
+plugins:
   - algoliasearch-jekyll
 ```
 
@@ -64,7 +64,7 @@ You can also define the `ALGOLIA_APPLICATION_ID` and `ALGOLIA_INDEX_NAME`
 environment variables. If present, they will be used instead of the options in
 `_config.yml`.
 
-You write api key will be read from the `ALGOLIA_API_KEY` environment variable.
+Your write api key will be read from the `ALGOLIA_API_KEY` environment variable.
 You can define it on the same line as your command, allowing you to type
 `ALGOLIA_API_KEY='your_write_api_key' jekyll algolia push`.
 
@@ -107,6 +107,18 @@ If you would like to also index lists, you could set it like this:
 ```yml
 algolia:
   record_css_selector: 'p,ul'
+```
+
+#### `allowed_extensions`
+
+Define additional extensions to be indexed. The default behaviour is to index
+only markdown and HTML files.
+
+```yml
+algolia:
+  allowed_extensions:
+    - adoc
+    - ad
 ```
 
 #### `settings`

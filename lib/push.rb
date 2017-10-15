@@ -41,6 +41,9 @@ class AlgoliaSearchJekyllPush < Jekyll::Command
       if @config['markdown_ext']
         allowed_extensions += @config['markdown_ext'].split(',')
       end
+      if @config['algolia']
+        allowed_extensions += (@config['algolia']['allowed_extensions'] || [])
+      end
       return false unless allowed_extensions.include?(extname)
 
       return false if excluded_file?(file)
