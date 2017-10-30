@@ -38,7 +38,7 @@ end
 
 Once this is done, download all dependencies with `bundle install`. 
 
-Then, add `algoliasearch-jekyll` to your `_config.yml` file, under the `gems`
+Then, add `algoliasearch-jekyll` to your `_config.yml` file, under the `plugins`
 section, like this:
 
 ```yaml
