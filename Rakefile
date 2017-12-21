@@ -1,12 +1,10 @@
-# encoding: utf-8
-
 require 'rubygems'
 require 'bundler'
 begin
   Bundler.setup(:default, :development)
 rescue Bundler::BundlerError => e
-  $stderr.puts e.message
-  $stderr.puts 'Run `bundle install` to install missing gems'
+  warn e.message
+  warn 'Run `bundle install` to install missing gems'
   exit e.status_code
 end
 require 'rake'
@@ -20,11 +18,18 @@ Jeweler::Tasks.new do |gem|
   gem.version = AlgoliaSearchJekyllVersion.to_s
   gem.homepage = 'https://github.com/algolia/algoliasearch-jekyll'
   gem.license = 'MIT'
-  gem.summary = 'AlgoliaSearch for Jekyll'
-  gem.description = 'Index all your pages and posts to an Algolia index with ' \
-                    '`jekyll algolia push`'
+  gem.summary = '[⚠ DEPRECATED ⚠]: Use jekyll-algolia instead'.freeze
+  gem.description = '[⚠ DEPRECATED ⚠]: Use jekyll-algolia instead'.freeze
   gem.email = 'tim@pixelastic.com'
   gem.authors = ['Tim Carry']
+  gem.post_install_message = <<-MESSAGE
+  !    The 'algolisearch-jekyll' gem has been deprecated and has been replaced with 'jekyll-algolia'.
+  !    See: https://rubygems.org/gems/jekyll-algolia
+  !    And: https://github.com/algolia/jekyll-algolia
+  !
+  !    You can get quickly started on the new plugin using this documentation:
+  !    https://community.algolia.com/jekyll-algolia/getting-started.html
+  MESSAGE
 
   # dependencies defined in Gemfile
 end
