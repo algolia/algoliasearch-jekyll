@@ -12,7 +12,7 @@ Gem::Specification.new do |s|
   s.require_paths = ["lib".freeze]
   s.authors = ["Tim Carry".freeze]
   s.date = "2017-10-15"
-  s.description = "Index all your pages and posts to an Algolia index with `jekyll algolia push`".freeze
+  s.description = "[⚠ DEPRECATED ⚠]: Use jekyll-algolia instead".freeze
   s.email = "tim@pixelastic.com".freeze
   s.extra_rdoc_files = [
     "LICENSE.txt",
@@ -101,7 +101,16 @@ Gem::Specification.new do |s|
   s.homepage = "https://github.com/algolia/algoliasearch-jekyll".freeze
   s.licenses = ["MIT".freeze]
   s.rubygems_version = "2.6.13".freeze
-  s.summary = "AlgoliaSearch for Jekyll".freeze
+  s.summary = "[⚠ DEPRECATED ⚠]: Use jekyll-algolia instead".freeze
+
+  s.post_install_message = <<-MESSAGE
+  !    The 'algolisearch-jekyll' gem has been deprecated and has been replaced with 'jekyll-algolia'.
+  !    See: https://rubygems.org/gems/jekyll-algolia
+  !    And: https://github.com/algolia/jekyll-algolia
+  !    
+  !    You can get quickly started on the new plugin using this documentation:
+  !    https://community.algolia.com/jekyll-algolia/getting-started.html
+  MESSAGE
 
   if s.respond_to? :specification_version then
     s.specification_version = 4
