@@ -9,6 +9,14 @@
 Jekyll plugin to automatically index your Jekyll posts and pages into an
 Algolia index by simply running `jekyll algolia push`.
 
+## Note
+
+**All new development is taking place in [algolia/jekyll-algolia](https://github.com/algolia/jekyll-algolia).**
+
+If you’re looking to contribute, please open your pull request there instead.
+
+This gem (and this repository) will be **deprecated** once that version is ready (which should be soon!).
+
 ## Usage
 
 ```shell
